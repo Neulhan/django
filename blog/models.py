@@ -18,3 +18,6 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=True)  # DateTimeField 는 자동으로 설정됨
     tags = models.CharField(max_length=100, blank=True)
     lnglat = models.CharField(max_length=50, validators=[lnglat_validator], blank=True, help_text="위도,경도 포맷으로 입력")
+    author = models.CharField(max_length=50)
+    anony = models.TextField(default=None)
+
