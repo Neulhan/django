@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path('sum/<str:x>/<int:y>/', views.mysum)
+    re_path(r'^sum/(?P<numbers>[\d/]+)/$', views.mysum)
 ]

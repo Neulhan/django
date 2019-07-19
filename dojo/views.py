@@ -3,7 +3,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def mysum(request, x,y):
+def mysum(request, numbers):
     #request: HttpRequest
-    print(int(x)+y)
-    return HttpResponse(int(x)+100+y)
+    result = sum(map(lambda s: int(s or 0), numbers.split("/")))
+    return HttpResponse(result)
+
