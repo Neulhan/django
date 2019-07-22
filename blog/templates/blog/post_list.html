@@ -30,6 +30,20 @@
         <p>
             여러분의 장고 페이스메이커가 되어드리겠습니다.
         </p>
+        <ul>
+            {% for post in post_list %}
+                <li>
+                    {{post.id }}
+                    {{ post.title }}
+                    <small>by{{ post.author }}</small>
+                    <small>at {{ post.updated_at }}</small>
+                </li>
+            {% endfor %}
+        </ul>
+
+
+
+
         <form action="#" method="post">
             <input type="text" placeholder="name" name="title" style="margin: 10px;border: #E6E6E6 solid 1px;color: #E6E6E6"> <br>
             <input type="text" placeholder="contents" name="contents" style="margin: 10px;border: #E6E6E6 solid 1px;color: #E6E6E6"> <br>
