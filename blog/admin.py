@@ -1,6 +1,7 @@
 # blog/admin.py
 from django.contrib import admin
 from .models import Post
+from .models import Comment
 
 
 # Register your models here.
@@ -19,6 +20,7 @@ class PostAdmin(admin.ModelAdmin):
     def make_published(self, request, queryset):
         updated_count = queryset.update(status='p')
         self.message_user(request, '{}건의 포스팅을 published 상태로 변경'.format(updated_count))
+
     make_published.short_description = " 지정 포스팅을 published 상태로 변경합니다."
 
     def make_draft(self, request, queryset):
@@ -26,4 +28,10 @@ class PostAdmin(admin.ModelAdmin):
         self.message_user(request, '{}건의 포스팅을 draft 상태로 변경'.format(updated_count))
 
     make_draft.short_description = " 지정 포스팅을 draft 상태로 변경합니다."
+
+
 # admin.site.register(Post, PostAdmin)
+
+@admin.register(Comment)
+class Commentadmin(admin.ModelAdmin):
+    pass

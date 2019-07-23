@@ -22,8 +22,14 @@ class Post(models.Model):
     reference = models.CharField(max_length=150, default=None)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)  # DateTimeField 는 자동으로 설정됨
-    tags = models.CharField(max_length=100, blank=True)
     author = models.CharField(max_length=50)
-    anony = models.TextField(default=None)
     status = models.CharField(max_length=1, choices=STATUS_CHOICES)
+
+
+class Comment(models.Model):
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    author = models.CharField(max_length=20)
+    message = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
