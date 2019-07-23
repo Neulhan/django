@@ -24,7 +24,7 @@ class Post(models.Model):
     updated_at = models.DateTimeField(auto_now=True)  # DateTimeField 는 자동으로 설정됨
     author = models.CharField(max_length=50)
     status = models.CharField(max_length=1, choices=STATUS_CHOICES)
-    tag_set = models.ManyToManyField('Tag')
+    tag_set = models.ManyToManyField('Tag', blank=True)
 
 
 class Comment(models.Model):
