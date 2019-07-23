@@ -3,8 +3,11 @@ from django.db import models
 import re
 from django.forms import ValidationError
 from django.contrib.auth.models import User
+from django.conf import settings
+
 
 # Create your models here.
+
 def lnglat_validator(value):
     if not re.match(r'^(\d+\.?\d*),(\d+\.?\d*)$', value):
         raise ValidationError("유효하지 않은 입려값입니다")
@@ -16,7 +19,7 @@ class Post(models.Model):
         ('p', 'published'),
         ('w', 'withdraw'),
     )
-
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=100, help_text="포스팅 제목을 입력해 주세요", verbose_name='제목')  # 길이 제한이 있는 문자열
     content = models.TextField()  # 길이 제한이 없는 문자열
     reference = models.CharField(max_length=150, default=None)
@@ -37,8 +40,10 @@ class Comment(models.Model):
 
 class Tag(models.Model):
     name = models.CharField(max_length=50, unique=True)
+
     def __str__(self):
         return str(self.name)
+
 
 class Profile(models.Model):
     pass
