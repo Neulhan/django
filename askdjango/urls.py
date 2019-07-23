@@ -23,7 +23,6 @@ urlpatterns = [
     path('dojo/', include('dojo.urls')),
     path('accounts/', include('accounts.urls')),
     path('shop/', include('shop.urls')),
-
 ]
 
 
