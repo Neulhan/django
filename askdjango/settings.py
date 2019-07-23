@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'blog',
     'dojo',
     'debug_toolbar',
-
+    'accounts',
 
 ]
 
