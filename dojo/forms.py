@@ -7,8 +7,8 @@ def min_length_3_validator(value):
 
 
 def h_validator(value):
-    if value != "한결":
-        raise forms.ValidationError("본인쟝이 아닙니다")
+    if len(value) < 3:
+        raise forms.ValidationError("3글자 이상 입력해주세요")
 
 
 class PostForm(forms.Form):

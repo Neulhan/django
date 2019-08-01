@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e05442e-8b08-4e45-a1fa-3104d2bca0de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dojo/templates/dojo/post_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dojo/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/dojo/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dojo/m.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dojo/m.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dojo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dojo/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dojo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dojo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dojo/templates/dojo/post_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/dojo/templates/dojo/post_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dojo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dojo/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,13 +64,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dojo/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="361">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
+                <element signature="e#0#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,8 +79,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/post_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="285">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -93,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dojo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="152">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -102,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dojo/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="190">
+              <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -189,10 +184,10 @@
         <option value="$PROJECT_DIR$/dojo/templates/dojo/post_list.html" />
         <option value="$PROJECT_DIR$/blog/forms.py" />
         <option value="$PROJECT_DIR$/dojo/urls.py" />
-        <option value="$PROJECT_DIR$/dojo/views.py" />
-        <option value="$PROJECT_DIR$/dojo/templates/dojo/post_form.html" />
         <option value="$PROJECT_DIR$/dojo/models.py" />
+        <option value="$PROJECT_DIR$/dojo/templates/dojo/post_form.html" />
         <option value="$PROJECT_DIR$/dojo/forms.py" />
+        <option value="$PROJECT_DIR$/dojo/views.py" />
       </list>
     </option>
   </component>
@@ -224,6 +219,13 @@
               <item name="askdjango" type="462c0819:PsiDirectoryNode" />
               <item name="dojo" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="askdjango" type="b2602c69:ProjectViewProjectNode" />
+              <item name="askdjango" type="462c0819:PsiDirectoryNode" />
+              <item name="dojo" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="dojo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -305,12 +307,12 @@
       <workItem from="1564378489689" duration="1246000" />
       <workItem from="1564399989297" duration="61000" />
       <workItem from="1564451184466" duration="4757000" />
-      <workItem from="1564674540953" duration="982000" />
+      <workItem from="1564674540953" duration="2164000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81822000" />
+    <option name="totallyTimeSpent" value="83004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="760" y="0" width="784" height="832" extended-state="0" />
@@ -623,33 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/post_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dojo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dojo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -667,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/post_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dojo/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -681,10 +649,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dojo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/post_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dojo/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="190">
+          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dojo/templates/dojo/post_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dojo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
