@@ -10,12 +10,15 @@ def mysum(request, name, age):
 
 
 def post_new(request):
-    form = PostForm(request.POST or None)
-    if form.is_valid():
-        post = form.save(commit=False)
-        post.ip = request.META['REMOTE_ADDR']
-        post.save()
-        return redirect('/dojo/new')
+    if request.method == 'POST':
+        form = PostForm(request.POST or None)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.ip = request.META['REMOTE_ADDR']
+            post.save()
+            return redirect('/dojo/new')
+    else:
+        form = PostForm()
     return render(request, 'dojo/post_form.html', {'form': form})
 
 
