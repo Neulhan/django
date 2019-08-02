@@ -1,10 +1,11 @@
 #blog/views.py
-
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 from .forms import PostForm
 from django.contrib import messages
+from django.contrib.messages import constants as messages_constants
 # Create your views here.
+MESSAGE_TAGS = {messages_constants.ERROR: 'danger'}
 
 
 def post_list(request):
