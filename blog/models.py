@@ -4,7 +4,7 @@ import re
 from django.forms import ValidationError
 from django.contrib.auth.models import User
 from django.conf import settings
-from imagekit.models import ImageSpecField
+from imagekit.models import ProcessedImageField
 from imagekit.processors import Thumbnail
 # Create your models here.
 
@@ -30,13 +30,12 @@ class Post(models.Model):
     status = models.CharField(max_length=1, choices=STATUS_CHOICES)
     tag_set = models.ManyToManyField('Tag', blank=True)
 
-    photo = models.ImageField(blank=True, upload_to='blog/post/%Y/%M/%D')
-    photo_thumbnail = ImageSpecField(
-        source='photo',
-        processors=[Thumbnail(300, 300)],
-        format='JPEG',
-        options={'quality': 60}
-    )
+    photo = ProcessedImageField(blank=True, upload_to='blog/post/%Y/%M/%D',
+                                processors=[Thumbnail(300, 300)],
+                                format='JPEG',
+                                options={'quality': 60}
+                                )
+
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
