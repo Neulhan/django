@@ -1,5 +1,9 @@
 {% extends "blog/layout.html" %}
-
+{% load imagekit %}
 {% block content %}
+
+
+{% thumbnail "100x100" post,photo as thunb%}
+<img src = '{{ thumb.url }}'/>
 
 {% endblock %}
