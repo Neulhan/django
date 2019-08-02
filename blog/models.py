@@ -30,6 +30,7 @@ class Post(models.Model):
     status = models.CharField(max_length=1, choices=STATUS_CHOICES)
     tag_set = models.ManyToManyField('Tag', blank=True)
 
+    photo = models.ImageField(blank=True)
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
