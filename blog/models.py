@@ -48,5 +48,3 @@ class Tag(models.Model):
         return str(self.name)
 
 
-class Profile(models.Model):
-    pass
