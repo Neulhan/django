@@ -4,8 +4,8 @@ import re
 from django.forms import ValidationError
 from django.contrib.auth.models import User
 from django.conf import settings
-
-
+from imagekit.models import ImageSpecField
+from imagekit.processors import Thumbnail
 # Create your models here.
 
 def lnglat_validator(value):
@@ -31,7 +31,12 @@ class Post(models.Model):
     tag_set = models.ManyToManyField('Tag', blank=True)
 
     photo = models.ImageField(blank=True, upload_to='blog/post/%Y/%M/%D')
-
+    photo_thumbnail = ImageSpecField(
+        source='photo',
+        processors=[Thumbnail(300, 300)],
+        format='JPEG',
+        options={'quality': 60}
+    )
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
