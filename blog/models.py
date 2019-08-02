@@ -32,6 +32,7 @@ class Post(models.Model):
 
     photo = models.ImageField(blank=True)
 
+
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     author = models.CharField(max_length=20)
