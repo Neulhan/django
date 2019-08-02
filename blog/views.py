@@ -3,6 +3,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import Post
 from .forms import PostForm
+from django.contrib import messages
 # Create your views here.
 
 
@@ -18,6 +19,8 @@ def post_new(request):
         form = PostForm(request.POST)
         if form.is_valid():
             post = form.save()
+            messages.success(request, '새 포스팅을 저장했습니다')
+
             return redirect(post)
     else:
         form = PostForm()
