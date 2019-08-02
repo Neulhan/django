@@ -10,7 +10,8 @@ def min_length_3_validator(value):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ['title', 'content']
+        fields = ['title', 'content', 'user_agent']
+        widgets = {'user_agent': forms.HiddenInput}
 
     def save(self, commit=True):
         self.instance = Post(**self.cleaned_data)
@@ -18,4 +19,3 @@ class PostForm(forms.ModelForm):
             self.instance.save()
 
         return self.instance
-
