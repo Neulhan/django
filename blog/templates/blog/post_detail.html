@@ -2,8 +2,12 @@
 {% load imagekit %}
 {% block content %}
 
+{% if post.photo %}
+    <img src="{{ post.photo.url }}" style="max-width: 100%";/>
+    {% thubnail "100x100" post.photo %}
+    {% thubnail "100x100" post.photo as thumb %}
+    <img src="{{ thumb.url }}" width="{{ thumb.width }}" height="{{ thumb.height }}" ;/>
 
-{% thumbnail "100x100" post,photo as thunb%}
-<img src = '{{ thumb.url }}'/>
-
+    {% thubnail "100x100" post.photo -- style="" onclick="" class=""%}
+{% endif %}
 {% endblock %}
