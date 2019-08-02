@@ -30,7 +30,7 @@ class Post(models.Model):
     status = models.CharField(max_length=1, choices=STATUS_CHOICES)
     tag_set = models.ManyToManyField('Tag', blank=True)
 
-    photo = models.ImageField(blank=True)
+    photo = models.ImageField(blank=True, upload_to='blog/post/%Y/%M/%D')
 
 
 class Comment(models.Model):
